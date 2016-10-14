@@ -11,30 +11,56 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Orianna 2" startnode="1" creator="Twine" creator-version="2.0.11" ifid="7558349C-3244-488C-B009-2795AE0B0E7B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">
-
-</script><tw-passagedata pid="1" name="Inicio" tags="" position="500,303">&lt;img src=&quot;http://theplantnewspaper.com/wp-content/uploads/2016/08/shrek.jpg&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
-EI! OW! To falando com vc cara.. 
-[[Fala ogro]]
-
-
-tw-sidebar {
+<tw-storydata name="Orianna 2" startnode="1" creator="Twine" creator-version="2.0.11" ifid="7558349C-3244-488C-B009-2795AE0B0E7B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   display: none;
-}</tw-passagedata>
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+</script><tw-passagedata pid="1" name="Inicio" tags="" position="500,301.6666666666667">&lt;img src=&quot;http://theplantnewspaper.com/wp-content/uploads/2016/08/shrek.jpg&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
+EI! OW! To falando com vc cara..
+[[Fala ogro]]</tw-passagedata>
 <tw-passagedata pid="2" name="Fala ogro" tags="" position="703,305">Tem uns cara se perdendo por aki, bicho ta loko parsa.. Tem como vc ajudar?
-[[Claro fala ae-&gt;Claro fala ae]]
-[[Sou obrigado a falar q sin pro jogo ter continuaçaum-&gt;Claro fala ae]]</tw-passagedata>
-<tw-passagedata pid="3" name="Claro fala ae" tags="" position="703,455">(set: $var to (either:&quot;burro&quot;,&quot;jerusalem&quot;,&quot;fausto silva&quot;))
+
+
+[[Claro fala ae-&gt;GerarObjetivo]]
+
+[[Sou obrigado a falar q sin pro jogo ter continuaçaum-&gt;GerarObjetivo]]</tw-passagedata>
+<tw-passagedata pid="3" name="GerarObjetivo" tags="" position="701.6666666666667,455">(set: $var to (either:&quot;Burro&quot;,&quot;Jerusalem&quot;,&quot;Sabrina Sato&quot;))
 Valeu cara!
-Quem vc deve achar é o: **(print: $var)**
+Quem vc deve achar é: **(print: $var)**
+
 Voce nao tem muito tempo, e a cidade por aqui é bem grande, se quiser encontrar ele a tempo é melhor focar em pessoas e lugares relacionados a ele. Boa sorte arrombado
 
 [[&quot;#PartiuJornada&quot;]]</tw-passagedata>
-<tw-passagedata pid="4" name="&quot;#PartiuJornada&quot;" tags="" position="703,605">Escolha um local para investigar.
-[[Bar]] - [[Igreja]] - [[Pantano]]</tw-passagedata>
-<tw-passagedata pid="5" name="Bar" tags="" position="703,755">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
-<tw-passagedata pid="6" name="Igreja" tags="" position="853,755">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
-<tw-passagedata pid="7" name="Pantano" tags="" position="1003,755">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="4" name="&quot;#PartiuJornada&quot;" tags="" position="701.6666666666667,605">*~Le pensamento~ 
+Meu objetivo é achar **$var** e essas são as coisas que eu sei a seu respeito:
+-
+-
+-
+KKKJ to fudidu
+*
+
+Andando perdido pela cidade você encontra o PERSONAGEM ALEATORIO, se alguém aqui sabe das coisas que acontecem na cidade é esse cara! Mas ele não é uma pessoa facil de se lidar, faça as perguntas corretas.
+[[1encontro&lt;-Falar com o maluco doente]]</tw-passagedata>
+<tw-passagedata pid="5" name="Verificacao de objetivo" tags="" position="206.66666666666669,506.6666666666667">(if: $var is &quot;burro&quot;)[Burro passou por aqui]
+(else:)[TEM NINGUEM NAO]</tw-passagedata>
+<tw-passagedata pid="6" name="1encontro" tags="" position="873.3333333333334,603.3333333333334">Escolha um inicio de dialogo com o PERSONAGEM ALEATORIO.
+
+*[[-Voce e lindu, me da informacaum?-&gt;Charmoso]]*
+*[[-ME AJUDA PELAMORDEDEUSCARA-&gt;Esterico]]*
+*[[-oq é oq é vai me falar onde $var ta ou vai levar um pisao no pé-&gt;Nervouser]]*</tw-passagedata>
+<tw-passagedata pid="7" name="Charmoso" tags="" position="738.3333333333334,766.6666666666667">Estou encantadu,mas n sei pq te contaria..
+
+*[[-pq é isu q pessoas boa fazem s2-&gt;Persuacao]]*
+*[[-pq senao vou bater tanto na sua cara q nem a gorda da sua mae vai te reconhcer-&gt;Violencia]]*</tw-passagedata>
+<tw-passagedata pid="8" name="Esterico" tags="" position="870,768.3333333333334">sim acalme jovem, respira ai, agora calmamente fala oq se qr
+
+*[[-TA TODO MUNDO SUMINDO FDP DA UM HELP AI PQP, SE VIU ESTE SER: $var ?-&gt;Violencia]]*</tw-passagedata>
+<tw-passagedata pid="9" name="Nervouser" tags="" position="1011.6667666666667,770">Rosas saum vermelhas
+Violetas saum azuis
+Tem fdp na minha frente
+Q vai parar so suis</tw-passagedata>
+<tw-passagedata pid="10" name="Persuacao" tags="" position="586.6666666666667,928.3333333333334">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="11" name="Violencia" tags="" position="800,940">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
 </tw-storydata>
 
 
