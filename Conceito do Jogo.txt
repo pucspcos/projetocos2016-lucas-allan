@@ -1,0 +1,2 @@
+Você é um viajante que encontra um ogro em seu caminho que te pedira ajuda para encontrar algum desaparecido que sera escolhido
+aleatoriamente pelo jogo, seu objetivo é encontrar essa pessoa fazendo perguntas para os outros moradores da cidade.
