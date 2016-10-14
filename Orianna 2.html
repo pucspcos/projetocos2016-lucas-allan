@@ -11,19 +11,30 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Orianna 2" startnode="1" creator="Twine" creator-version="2.0.11" ifid="7558349C-3244-488C-B009-2795AE0B0E7B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+<tw-storydata name="Orianna 2" startnode="1" creator="Twine" creator-version="2.0.11" ifid="7558349C-3244-488C-B009-2795AE0B0E7B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-passagedata pid="1" name="Inicio" tags="" position="500,303">&lt;img src=&quot;http://theplantnewspaper.com/wp-content/uploads/2016/08/shrek.jpg&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
 EI! OW! To falando com vc cara.. 
-[[Fala ogro]]</tw-passagedata>
+[[Fala ogro]]
+
+
+tw-sidebar {
+  display: none;
+}</tw-passagedata>
 <tw-passagedata pid="2" name="Fala ogro" tags="" position="703,305">Tem uns cara se perdendo por aki, bicho ta loko parsa.. Tem como vc ajudar?
 [[Claro fala ae-&gt;Claro fala ae]]
 [[Sou obrigado a falar q sin pro jogo ter continuaçaum-&gt;Claro fala ae]]</tw-passagedata>
-<tw-passagedata pid="3" name="Claro fala ae" tags="" position="703,455">(set: $var to &quot;text&quot;)
-(print: $var)
+<tw-passagedata pid="3" name="Claro fala ae" tags="" position="703,455">(set: $var to (either:&quot;burro&quot;,&quot;jerusalem&quot;,&quot;fausto silva&quot;))
+Valeu cara!
+Quem vc deve achar é o: **(print: $var)**
+Voce nao tem muito tempo, e a cidade por aqui é bem grande, se quiser encontrar ele a tempo é melhor focar em pessoas e lugares relacionados a ele. Boa sorte arrombado
 
-Qm vc deve achar é o: (either:&quot;burro&quot;,&quot;jerusalem&quot;,&quot;fausto silva&quot;).
-</tw-passagedata>
+[[&quot;#PartiuJornada&quot;]]</tw-passagedata>
+<tw-passagedata pid="4" name="&quot;#PartiuJornada&quot;" tags="" position="703,605">Escolha um local para investigar.
+[[Bar]] - [[Igreja]] - [[Pantano]]</tw-passagedata>
+<tw-passagedata pid="5" name="Bar" tags="" position="703,755">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="6" name="Igreja" tags="" position="853,755">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="7" name="Pantano" tags="" position="1003,755">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
 </tw-storydata>
 
 
