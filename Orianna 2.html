@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Orianna 2" startnode="1" creator="Twine" creator-version="2.0.11" ifid="7558349C-3244-488C-B009-2795AE0B0E7B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="Orianna 2" startnode="5" creator="Twine" creator-version="2.0.11" ifid="7558349C-3244-488C-B009-2795AE0B0E7B" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   display: none;
 }
 body
@@ -32,6 +32,7 @@ body, tw-story
   font-size: 22px;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
 
@@ -39,17 +40,18 @@ body, tw-story
 
 
 
-</script><tw-passagedata pid="1" name="Inicio" tags="" position="908,3">&lt;img src=&quot;https://www.shreksadventure.com/media/1147/shrek.png
-&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;
-EI! OW! To falando com vc cara..
-[[Fala ogro]]</tw-passagedata>
-<tw-passagedata pid="2" name="Fala ogro" tags="" position="1110,8">&lt;img src=&quot;https://www.shreksadventure.com/media/1147/shrek.png
-&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;
 
-Tem uns cara loco se perdendo por aqui.. Tem como vc ajudar?
+</script><tw-passagedata pid="1" name="Inicio" tags="" position="908,3">EI! OW! To falando com vc cara..
+[[Fala ogro]]
 
+&lt;img src=&quot;https://www.shreksadventure.com/media/1147/shrek.png
+&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="2" name="Fala ogro" tags="" position="1110,8">Tem uns cara loco se perdendo por aqui.. Tem como vc ajudar?
 [[Claro fala ae-&gt;GerarObjetivo]]
-[[To afim não mano, mó preguiça-&gt;fodaseirmao]]</tw-passagedata>
+[[To afim não mano, mó preguiça-&gt;fodaseirmao]]
+
+&lt;img src=&quot;https://www.shreksadventure.com/media/1147/shrek.png
+&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="3" name="GerarObjetivo" tags="" position="1108,158">(set: $var to (either:&quot;Burro&quot;,&quot;Jerusalem&quot;,&quot;Sabrina Sato&quot;))
 Valeu cara!
 Quem vc deve achar é: **(print: $var)**
@@ -68,28 +70,30 @@ KKKK to fodido
 
 Andando perdido pela cidade você encontra o $rndChar, se alguém aqui sabe das coisas que acontecem na cidade é esse cara! Mas ele não é uma pessoa facil de se lidar, faça as perguntas corretas.
 [[1encontro&lt;-Falar com o maluco doente]]</tw-passagedata>
-<tw-passagedata pid="5" name="Verificacao de objetivo" tags="" position="606,405">(if: $var is &quot;burro&quot;)[Burro passou por aqui]
-(else:)[TEM NINGUEM NAO]</tw-passagedata>
+<tw-passagedata pid="5" name="Instrucoes" tags="" position="710,3">**Bem vindo ao jogo de busca no mundo dos memes!**
+Aqui estão as intruções: Você deve aceitar o desafio e localizar um dos personagens perdidos, saia pela jornada indo a locais relacionados com a pessoa ou animal perdido e fale com seus conhecidos para conseguir informações. Mas não perca tempo, vá o mais rapido possivel ou seu alvo pode nunca ser achado! BOA SORTE
+
+[[INCIAR O JOGO-&gt;Inicio]]</tw-passagedata>
 <tw-passagedata pid="6" name="1encontro" tags="" position="1110,450">Escolha um inicio de dialogo com o $rndChar.
 
-*[[-Ei lindo, me da uma informação?-&gt;Charmoso]]*
-*[[-ME AJUDA PELAMORDEDEUSCARA-&gt;Esterico]]*
-*[[-o que é o que é vai me falar onde $var ta ou vai levar um pisao no pé-&gt;Nervouser]]*
+[[-Ei lindo, me da uma informação?-&gt;Charmoso]]
+[[-ME AJUDA PELAMORDEDEUSCARA-&gt;Esterico]]
+[[-o que é o que é vai me falar onde $var ta ou vai levar um pisao no pé-&gt;Nervouser]]
 
 (if: $rndChar is &quot;Vozao&quot;)[&lt;img src=&quot;http://vignette3.wikia.nocookie.net/ben10/images/c/c9/Max_AF.png/revision/latest?cb=20140823133206&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
 (if: $rndChar is &quot;Ben Dez&quot;)[&lt;img src=&quot;https://1.bp.blogspot.com/-7ous7yZKsPc/VM0uC8Gdw7I/AAAAAAAAFEU/9GfnTYVYYbA/s1600/Ben_10.PNG&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
 (if: $rndChar is &quot;Gwen&quot;)[&lt;img src=&quot;http://vignette4.wikia.nocookie.net/ben10/images/d/d1/Ben10_gwen_174x252.png/revision/20120323173531?path-prefix=pt&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]</tw-passagedata>
 <tw-passagedata pid="7" name="Charmoso" tags="" position="973,611">Estou encantado,mas não sei porque te contaria..
 
-*[[-Porque é isso que pessoas do bem fazem-&gt;Persuacao]]*
-*[[-porque se nao vou bater tanto na sua cara que nem a gorda da sua mae vai te reconhcer-&gt;Violencia]]*
+[[-Porque é isso que pessoas do bem fazem-&gt;Persuacao]]
+[[-porque se nao vou bater tanto na sua cara que nem a gorda da sua mae vai te reconhecer-&gt;Violencia]]
 
 (if: $rndChar is &quot;Vozao&quot;)[&lt;img src=&quot;http://vignette3.wikia.nocookie.net/ben10/images/c/c9/Max_AF.png/revision/latest?cb=20140823133206&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
 (if: $rndChar is &quot;Ben Dez&quot;)[&lt;img src=&quot;https://1.bp.blogspot.com/-7ous7yZKsPc/VM0uC8Gdw7I/AAAAAAAAFEU/9GfnTYVYYbA/s1600/Ben_10.PNG&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
 (if: $rndChar is &quot;Gwen&quot;)[&lt;img src=&quot;http://vignette4.wikia.nocookie.net/ben10/images/d/d1/Ben10_gwen_174x252.png/revision/20120323173531?path-prefix=pt&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]</tw-passagedata>
 <tw-passagedata pid="8" name="Esterico" tags="" position="1111,608">si acalme jovem, respira ai, agora calmamente fala o que se querr
 
-*[[-TA TODO MUNDO SUMINDO FDP DA UM HELP AI PQP, SE VIU ESTE SER: $var ?-&gt;1informacao]]*
+[[-TA TODO MUNDO SUMINDO FDP DA UM HELP AI PQP, SE VIU ESTE SER: $var ?-&gt;1informacao Certa]]
 
 (if: $rndChar is &quot;Vozao&quot;)[&lt;img src=&quot;http://vignette3.wikia.nocookie.net/ben10/images/c/c9/Max_AF.png/revision/latest?cb=20140823133206&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
 (if: $rndChar is &quot;Ben Dez&quot;)[&lt;img src=&quot;https://1.bp.blogspot.com/-7ous7yZKsPc/VM0uC8Gdw7I/AAAAAAAAFEU/9GfnTYVYYbA/s1600/Ben_10.PNG&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
@@ -122,8 +126,7 @@ Gwen sai correndo sem te dar informação nenhuma, vc perdeu
 (if: $rndChar is &quot;Gwen&quot;)[&lt;img src=&quot;http://vignette4.wikia.nocookie.net/ben10/images/d/d1/Ben10_gwen_174x252.png/revision/20120323173531?path-prefix=pt&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]</tw-passagedata>
 <tw-passagedata pid="11" name="Violencia" tags="" position="1038,778">
 noça jogador, também não te conto mais nada, de o fora daqui
-[[Claro fala ae-&gt;1informacao]]
-[[Nao e quem estou procurando vlw flw-&gt;Escolha de caminhos]]
+[[Nao preciso mesmo-&gt;Escolha de caminhos]]
 
 (if: $rndChar is &quot;Vozao&quot;)[&lt;img src=&quot;http://vignette3.wikia.nocookie.net/ben10/images/c/c9/Max_AF.png/revision/latest?cb=20140823133206&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
 (if: $rndChar is &quot;Ben Dez&quot;)[&lt;img src=&quot;https://1.bp.blogspot.com/-7ous7yZKsPc/VM0uC8Gdw7I/AAAAAAAAFEU/9GfnTYVYYbA/s1600/Ben_10.PNG&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;]
@@ -136,8 +139,11 @@ FODASE IRMAO, ajuda nós ai vai cara...
 [[ta vai... -&gt;GerarObjetivo]] </tw-passagedata>
 <tw-passagedata pid="13" name="Escolha de caminhos" tags="" position="1040,1168">[[Caminho floresta]]
 [[Caminho cidade]]
-[[Caminho caverna]]</tw-passagedata>
-<tw-passagedata pid="14" name="Caminho floresta" tags="" position="513,1340">Andando pelo caminho da floresta vc ouve barulhos nos arbustos logo a frente
+[[Caminho caverna]]
+
+&lt;img src=&quot;http://magbookkeeping.com/wp-content/uploads/2015/06/shutterstock_131772284-e1435089687820.jpg
+&quot; width=&quot;400&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="14" name="Caminho floresta" tags="" position="499,1328">Andando pelo caminho da floresta vc ouve barulhos nos arbustos logo a frente
 
 [[continuar pela floresta -&gt; FlorestaUm]]
 
@@ -146,19 +152,32 @@ FODASE IRMAO, ajuda nós ai vai cara...
 
 [[Caminho cidade]]
 [[Caminho caverna]]
-[[Escolha de caminhos]]</tw-passagedata>
-<tw-passagedata pid="15" name="Caminho cidade" tags="" position="1036,1445">[[Caminho floresta]]
-[[Caminho caverna]]
-[[Escolha de caminhos]] </tw-passagedata>
+[[Escolha de caminhos]]
+
+&lt;img src=&quot;http://vignette2.wikia.nocookie.net/shrek/images/1/1f/Far_Far_Away_Sign_Shrek.jpg/revision/latest?cb=20110530035520
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="15" name="Caminho cidade" tags="" position="1040,1445">Escolha um dos lugares para investigar antes de seguir adiante:
+[[Bar]]
+[[Hospedagem]]
+[[Praça]]
+
+[[Seguir adiante na busca(não tem volta)-&gt;cidade2]]
+[[Voltar para a escolha de caminhos-&gt;Escolha de caminhos]] 
+
+&lt;img src=&quot;http://static1.wikia.nocookie.net/__cb20100613042229/shrek/images/5/5c/Farfaraway.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="16" name="Caminho caverna" tags="" position="1612,1339">[[Caminho floresta]]
 [[Caminho cidade]]
-[[Escolha de caminhos]]</tw-passagedata>
+[[Escolha de caminhos]]
+
+&lt;img src=&quot;http://images.askmen.com/1080x540/2016/03/16-095322-american_arrested_for_indiana_jones_style_cave_heist.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
 <tw-passagedata pid="17" name="1informacao" tags="" position="1240,1046">(if: $rndChar is &quot;Vozao&quot;)[Pelo o que eu soube ela estava em um lugar bem movimentado quando foi sequestrada] 
 (elseif: $rndChar is &quot;Ben Dez&quot;)[A ultima coisa que eu sei dele e que ele tava seguindo um bixo ai gritando &quot;EU SOU UM ALASAUM&quot;] 
 (elseif: $rndChar is &quot;Gwen&quot;)[Esse cara e bem bizarro, a unica coisa q notei é que ele carregava varias tochas]
 
 [[Escolha de caminhos]]</tw-passagedata>
-<tw-passagedata pid="18" name=" FlorestaUm" tags="" position="515,1547">(if: $florestaChar is &quot;Faustao&quot;)[&lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
+<tw-passagedata pid="18" name=" FlorestaUm" tags="" position="246,1494">(if: $florestaChar is &quot;Faustao&quot;)[&lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt; A Wild Faustao Appears [[Oloco bixo -&gt; fausto]]]
 
 (else-if: $florestaChar is &quot;Pericles&quot;)[&lt;img src=&quot;http://static.meionorte.com/uploads/imagens/2012/8/14/cantor-pa-ricles-recebe-alta-de-hospital-no-rio-de-janeiro0482154113a18ecdd53c1f1c2f92fb1a.jpg
@@ -166,7 +185,7 @@ FODASE IRMAO, ajuda nós ai vai cara...
 
 (else-if: $florestaChar is &quot;Templario&quot;)[&lt;img src=&quot;https://s-media-cache-ak0.pinimg.com/236x/39/e2/cf/39e2cf3f7b4a38ced5cfa72d019dea17.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt; Deus Vult [[EOQ -&gt; DeusVult]] ]</tw-passagedata>
-<tw-passagedata pid="19" name=" fausto" tags="" position="360,1697">Ei você viu o $var ?
+<tw-passagedata pid="19" name=" fausto" tags="" position="91,1644">Ei você viu o $var ?
 
 &lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
@@ -174,7 +193,7 @@ FODASE IRMAO, ajuda nós ai vai cara...
 Precisamente as 16:20.
 
 [[Continue-&gt;fausto2]]</tw-passagedata>
-<tw-passagedata pid="20" name=" Nosa Pericles" tags="" position="513,1698">Ei seu gordo, vc sabe onde ta $var?
+<tw-passagedata pid="20" name=" Nosa Pericles" tags="" position="244,1645">Ei seu gordo, vc sabe onde ta $var?
 
 &lt;img src=&quot;http://static.meionorte.com/uploads/imagens/2012/8/14/cantor-pa-ricles-recebe-alta-de-hospital-no-rio-de-janeiro0482154113a18ecdd53c1f1c2f92fb1a.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
@@ -183,7 +202,7 @@ Precisamente as 16:20.
 
 [[Cutucar Pericles-&gt; LevantaGordo]]
 [[Ignorar Pericles e continuar seu caminho-&gt;FlorestaPT3]]</tw-passagedata>
-<tw-passagedata pid="21" name=" DeusVult" tags="" position="680,1697">ALTO LA FORASTEIRO!
+<tw-passagedata pid="21" name=" DeusVult" tags="" position="411,1644">ALTO LA FORASTEIRO!
 
 O QUE FAZ SOZINHO NESTA FLORESTA?
 
@@ -197,7 +216,7 @@ To procurando por $var, vc pode me ajudar?
 
 [[Eu não, tenho mais o que fazer...-&gt;perdeuFloresta]]
 ]</tw-passagedata>
-<tw-passagedata pid="22" name="fausto2" tags="" position="360,1847">Então você viu? Onde ele ta?
+<tw-passagedata pid="22" name="fausto2" tags="" position="91,1794">Então você viu? Onde ele ta?
 
 &lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
@@ -207,13 +226,13 @@ Naum sei.
 [[Continue-&gt;fausto3]]
 
 </tw-passagedata>
-<tw-passagedata pid="23" name="fausto3" tags="" position="360,1994">&lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
+<tw-passagedata pid="23" name="fausto3" tags="" position="91,1941">&lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
 
 [[Ficar Nervouser-&gt;faustoNervouser]]
 
 [[Persuadir-&gt;faustoPersoazao]]</tw-passagedata>
-<tw-passagedata pid="24" name="faustoNervouser" tags="" position="202,2078">Pq vc disse que viu ele então fdp???? Me conta onde ele ta logo..
+<tw-passagedata pid="24" name="faustoNervouser" tags="" position="0,2047">Pq vc disse que viu ele então fdp???? Me conta onde ele ta logo..
 
 &lt;img src=&quot;http://i2.kym-cdn.com/photos/images/newsfeed/000/894/927/b33.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
@@ -223,7 +242,7 @@ Oloco Bixo. Eu não vi ninguem não, mal ae.
 [[Continue Andando pela Floresta-&gt;FlorestaPT2]] 
 
 </tw-passagedata>
-<tw-passagedata pid="25" name="faustoPersoazao" tags="" position="361,2165">Diz ai cara, eu sei que vc viu ele sim... Quem sabe faz ao vivo.
+<tw-passagedata pid="25" name="faustoPersoazao" tags="" position="92,2112">Diz ai cara, eu sei que vc viu ele sim... Quem sabe faz ao vivo.
 
 &lt;img src=&quot;https://pbs.twimg.com/profile_images/548298498815176704/gtGh9Guf.png
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
@@ -232,7 +251,7 @@ Oloco Bixo. Eu não vi ninguem não, mal ae.
 Nem vi não, tava te troslando só.
 
 [[Continuar andando Pela Floresta-&gt;FlorestaPT2]] </tw-passagedata>
-<tw-passagedata pid="26" name="FlorestaPT2" tags="" position="530,2071">(if: $florestaChar is &quot;Faustao&quot;)[(set: $florestaChar2 to (either:&quot;Pericles&quot;,&quot;Templario&quot;))]
+<tw-passagedata pid="26" name="FlorestaPT2" tags="" position="261,2018">(if: $florestaChar is &quot;Faustao&quot;)[(set: $florestaChar2 to (either:&quot;Pericles&quot;,&quot;Templario&quot;))]
 
 (else-if: $florestaChar is &quot;Pericles&quot;)[(set: $florestaChar2 to (either:&quot;Faustao&quot;,&quot;Templario&quot;))]
 
@@ -243,7 +262,7 @@ Nem vi não, tava te troslando só.
 (if: $florestaChar2 is &quot;Faustao&quot;)[Mais a frente na floresta você se depara com alguem se aproximando [[Continuar-&gt; fausto]] ]
 
 (if: $florestaChar2 is &quot;Pericles&quot;)[Mais a frente na floresta você se depara com alguem se aproximando [[Continuar-&gt; Nosa Pericles]] ]</tw-passagedata>
-<tw-passagedata pid="27" name=" LevantaGordo" tags="" position="817,1924">*Pericles acorda e se levanta*
+<tw-passagedata pid="27" name=" LevantaGordo" tags="" position="548,1871">*Pericles acorda e se levanta*
 
 Ow bola de banha, vc sabe onde eu acho $var?
 
@@ -256,7 +275,7 @@ Puta merda seu gordo inutil, vlw por nada.
 
 [[Continuar Caminho-&gt;FlorestaPT3]]
 </tw-passagedata>
-<tw-passagedata pid="28" name="FlorestaPT3" tags="" position="694,2071">(if: $florestaChar is &quot;Faustao&quot;)[(set: $florestaChar2 to (either:&quot;Pericles&quot;,&quot;Templario&quot;))]
+<tw-passagedata pid="28" name="FlorestaPT3" tags="" position="425,2018">(if: $florestaChar is &quot;Faustao&quot;)[(set: $florestaChar2 to (either:&quot;Pericles&quot;,&quot;Templario&quot;))]
 
 (else-if: $florestaChar is &quot;Pericles&quot;)[(set: $florestaChar2 to (either:&quot;Faustao&quot;,&quot;Templario&quot;))]
 
@@ -279,12 +298,12 @@ Puta merda seu gordo inutil, vlw por nada.
 (if: $florestaChar3 is &quot;Faustao&quot;)[Voce ouve um barulho estranho vindo da floresta e vai averiguar [[Continuar-&gt; fausto]] ]
 
 (if: $florestaChar3 is &quot;Pericles&quot;)[Voce ouve um barulho estranho vindo da floresta e vai averiguar [[Continuar-&gt; Nosa Pericles]] ]</tw-passagedata>
-<tw-passagedata pid="29" name="vitoriaJerusalem" tags="" position="916,1772">Parabens!!!
+<tw-passagedata pid="29" name="vitoriaJerusalem" tags="" position="647,1719">Parabens!!!
 
 Você encontrou Jerusalem e ajudou a toma-la de volta.
 
 [[Jogar Novamente-&gt;Inicio]]</tw-passagedata>
-<tw-passagedata pid="30" name="perdeuFloresta" tags="" position="916,1635">HEREGE!!!11!!1!ONZE!!
+<tw-passagedata pid="30" name="perdeuFloresta" tags="" position="647,1582">HEREGE!!!11!!1!ONZE!!
 
 &lt;img src=&quot;http://becher1.greyfalcon.us/pictures6/kt3.jpg
 &quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;
@@ -292,6 +311,65 @@ Você encontrou Jerusalem e ajudou a toma-la de volta.
 O templario te mata por sua heresia.. 
 
 [[Jogar Novamente-&gt;Inicio]]</tw-passagedata>
+<tw-passagedata pid="31" name="Bar" tags="" position="892,1615">O bar da cidade é bem movimentado, vocês tem muitas opções de pessoas para conversar MAS LEMBRE-SE: Você perde tempo, então escolha a pessoa certa para seu objetivo.
+[[Falar com ratinho]]
+[[Falar com urro boy]]
+[[Falar com Missionario]]
+[[Sair do bar-&gt;Caminho cidade]]
+
+&lt;img src=&quot;http://vignette2.wikia.nocookie.net/himym/images/1/1b/Three_days_of_snow_-_ted_and_barney_tend_bar.png/revision/latest?cb=20101008024243
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="32" name="Praça" tags="" position="1191,1615">Clique duas vezes nessa passagem para editá-la.
+
+&lt;img src=&quot;http://1.bp.blogspot.com/-qC7zCcDzi4Q/T6b7eD8KK3I/AAAAAAAAAIM/RD21YgMAoB0/s1600/0907praca_e_nossa.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="33" name="Hospedagem" tags="" position="1041,1615">Clique duas vezes nessa passagem para editá-la.
+
+&lt;img src=&quot;http://img.paraviagem.com.br/uploads/2013/06/clarion-inn-6.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="34" name="Falar com ratinho" tags="" position="783.0001,1738">O Senhor Litle Rat, você por acaso viu $var?
+
+(if: $var is &quot;Burro&quot;)[Olha cara eu nao sei nada sobre ele, mas eu ouvi alguem falando sobre ele aqui mesmo no bar] 
+(elseif: $var is &quot;Jerusalem&quot;)[Esse é um bara bem bizarro, acha que ninguem aqui sabe nada sobre ele] 
+(elseif: $var is &quot;Sabrina Sato&quot;)[Minha diva Sabrina, eu estava a procura dela mas perdi rastros no castelo]
+
+[[Voltar-&gt;Bar]]
+
+&lt;img src=&quot;http://www.promoligacaopremiada.com.br/assets/images/ratinho.png
+&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="35" name="Falar com urro boy" tags="" position="782.0002,1852">O jovem Urro Boy, você por acaso viu $varChar?
+
+(if: $var is &quot;Burro&quot;)[Ele foi fazer o alasaum na floresta] 
+(elseif: $var is &quot;Jerusalem&quot;)[nem sei quem é] 
+(elseif: $var is &quot;Sabrina Sato&quot;)[ela não fez o urro]
+
+[[Voltar-&gt;Bar]]
+
+&lt;img src=&quot;https://pbs.twimg.com/profile_images/1139674937/of_400x400.jpg
+&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="36" name="Falar com Missionario" tags="" position="781.0001,1977">O Senhor Litle Rat, você por acaso viu $varChar?
+
+(if: $var is &quot;Burro&quot;)[ele é chato] 
+(elseif: $var is &quot;Jerusalem&quot;)[Meu grandissimo amigo estava proximo a caverna quando sumiu] 
+(elseif: $var is &quot;Sabrina Sato&quot;)[nao me importo com essa pecadora]
+
+[[Voltar-&gt;Bar]]
+
+&lt;img src=&quot;http://www.ongrace.com/portal/wp-content/themes/ongrace/img/rr-share.jpg
+&quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+<tw-passagedata pid="37" name="1informacao Certa" tags="" position="1249,798">(if: $var is &quot;Burro&quot;)[A ultima coisa que eu sei dele e que ele tava seguindo um bixo ai gritando &quot;EU SOU UM ALASAUM&quot;] 
+(elseif: $var is &quot;Jerusalem&quot;)[Esse cara e bem bizarro, a unica coisa q notei é que ele carregava varias tochas] 
+(elseif: $var is &quot;Sabrina Sato&quot;)[Pelo o que eu soube ela estava em um lugar bem movimentado quando foi sequestrada]
+
+[[Escolha de caminhos]]</tw-passagedata>
+<tw-passagedata pid="38" name="cidade2" tags="" position="1043,1952">Você está quase lá!
+Escolha o próximo caminho a seguir:
+[[Ir para o cemiterio]]
+[[Ir para o castelo]]
+[[Ir para a cabana abandonada]]</tw-passagedata>
+<tw-passagedata pid="39" name="Ir para o cemiterio" tags="" position="891,2102">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="40" name="Ir para o castelo" tags="" position="1041,2102">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="41" name="Ir para a cabana abandonada" tags="" position="1195,2105">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
 </tw-storydata>
 
 
