@@ -33,7 +33,9 @@ body, tw-story
 }
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -171,7 +173,9 @@ FODASE IRMAO, ajuda nós ai vai cara...
 [[Escolha de caminhos]]
 
 &lt;img src=&quot;http://images.askmen.com/1080x540/2016/03/16-095322-american_arrested_for_indiana_jones_style_cave_heist.jpg
-&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+[[Continuar para caverna-&gt;CavernaUM]]</tw-passagedata>
 <tw-passagedata pid="17" name="1informacao" tags="" position="1240,1046">(if: $rndChar is &quot;Vozao&quot;)[Pelo o que eu soube ela estava em um lugar bem movimentado quando foi sequestrada] 
 (elseif: $rndChar is &quot;Ben Dez&quot;)[A ultima coisa que eu sei dele e que ele tava seguindo um bixo ai gritando &quot;EU SOU UM ALASAUM&quot;] 
 (elseif: $rndChar is &quot;Gwen&quot;)[Esse cara e bem bizarro, a unica coisa q notei é que ele carregava varias tochas]
@@ -202,7 +206,7 @@ Precisamente as 16:20.
 
 [[Cutucar Pericles-&gt; LevantaGordo]]
 [[Ignorar Pericles e continuar seu caminho-&gt;FlorestaPT3]]</tw-passagedata>
-<tw-passagedata pid="21" name=" DeusVult" tags="" position="411,1644">ALTO LA FORASTEIRO!
+<tw-passagedata pid="21" name=" DeusVult" tags="" position="410,1643">ALTO LA FORASTEIRO!
 
 O QUE FAZ SOZINHO NESTA FLORESTA?
 
@@ -327,7 +331,7 @@ O templario te mata por sua heresia..
 
 &lt;img src=&quot;http://img.paraviagem.com.br/uploads/2013/06/clarion-inn-6.jpg
 &quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
-<tw-passagedata pid="34" name="Falar com ratinho" tags="" position="783.0001,1738">O Senhor Litle Rat, você por acaso viu $var?
+<tw-passagedata pid="34" name="Falar com ratinho" tags="" position="783,1738">O Senhor Litle Rat, você por acaso viu $var?
 
 (if: $var is &quot;Burro&quot;)[Olha cara eu nao sei nada sobre ele, mas eu ouvi alguem falando sobre ele aqui mesmo no bar] 
 (elseif: $var is &quot;Jerusalem&quot;)[Esse é um bara bem bizarro, acha que ninguem aqui sabe nada sobre ele] 
@@ -337,7 +341,7 @@ O templario te mata por sua heresia..
 
 &lt;img src=&quot;http://www.promoligacaopremiada.com.br/assets/images/ratinho.png
 &quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
-<tw-passagedata pid="35" name="Falar com urro boy" tags="" position="782.0002,1852">O jovem Urro Boy, você por acaso viu $varChar?
+<tw-passagedata pid="35" name="Falar com urro boy" tags="" position="782,1852">O jovem Urro Boy, você por acaso viu $varChar?
 
 (if: $var is &quot;Burro&quot;)[Ele foi fazer o alasaum na floresta] 
 (elseif: $var is &quot;Jerusalem&quot;)[nem sei quem é] 
@@ -347,7 +351,7 @@ O templario te mata por sua heresia..
 
 &lt;img src=&quot;https://pbs.twimg.com/profile_images/1139674937/of_400x400.jpg
 &quot; width=&quot;400&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;</tw-passagedata>
-<tw-passagedata pid="36" name="Falar com Missionario" tags="" position="781.0001,1977">O Senhor Litle Rat, você por acaso viu $varChar?
+<tw-passagedata pid="36" name="Falar com Missionario" tags="" position="781,1977">O Senhor Litle Rat, você por acaso viu $varChar?
 
 (if: $var is &quot;Burro&quot;)[ele é chato] 
 (elseif: $var is &quot;Jerusalem&quot;)[Meu grandissimo amigo estava proximo a caverna quando sumiu] 
@@ -370,6 +374,111 @@ Escolha o próximo caminho a seguir:
 <tw-passagedata pid="39" name="Ir para o cemiterio" tags="" position="891,2102">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
 <tw-passagedata pid="40" name="Ir para o castelo" tags="" position="1041,2102">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
 <tw-passagedata pid="41" name="Ir para a cabana abandonada" tags="" position="1195,2105">Clique duas vezes nessa passagem para editá-la.</tw-passagedata>
+<tw-passagedata pid="42" name="CavernaUM" tags="" position="1611,1606">(set: $cavernaChar to (either:&quot;messi&quot;,&quot;pepe&quot;,&quot;dragao&quot;))
+
+(if: $cavernaChar is &quot;messi&quot;)[&lt;img src=&quot;http://famosos.culturamix.com/blog/wp-content/gallery/autistas-famosos-5/Autistas-Famosos-13.jpg
+&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt; Um cara se aproxima te dando Oi [[Ei cara o que vc ta fazendo aqui? -&gt;messiUM]]]
+
+(else-if: $cavernaChar is &quot;pepe&quot;)[&lt;img src=&quot;http://36.media.tumblr.com/5dba2894924951d2440d1589c6e60c55/tumblr_ngng3w2Ulm1rtm6dso1_1280.png
+&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt;Você se depara com um sapo sentado no canto da caverna [[ei seu emo -&gt;pepeUM]]]
+
+(else-if: $cavernaChar is &quot;dragao&quot;)[&lt;img src=&quot;http://i120.photobucket.com/albums/o181/surfergirloco/dragon_shrek.jpg
+&quot; width=&quot;500&quot; height=&quot;300&quot; alt=&quot;Two foxes&quot;&gt; CARALHO QUE LAGARTIXA GIGANTE [[Rawr! -&gt;dragaoUM]] ]</tw-passagedata>
+<tw-passagedata pid="43" name="messiUM" tags="" position="1611,1756">Num sei...
+
+fodase então, me ajuda ai, ce sabe onde acho $var ???
+
+Num sei...
+
+&lt;img src=&quot;https://ugc.kn3.net/i/origin/http://www.noticierodigital.com/cms/wp-content/uploads/mundial_2014_alemania_y_argentina_13jul2014_lionel_messi.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+[[Porra mano, ce tem autista?-&gt;messi2]]</tw-passagedata>
+<tw-passagedata pid="44" name="pepeUM" tags="" position="2199,1760">- Pepe não responde - 
+
+Cara, eu to falando com você.
+
+- Pepe continua quieto - 
+
+&lt;img src=&quot;http://36.media.tumblr.com/5dba2894924951d2440d1589c6e60c55/tumblr_ngng3w2Ulm1rtm6dso1_1280.png
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+[[Xingar pepe-&gt;sapoInutil]]
+[[Ignorar pepe-&gt;caverna2]]</tw-passagedata>
+<tw-passagedata pid="45" name="dragaoUM" tags="" position="2198,1602">Caraca, um dagrao.
+
+ei seu dagrao vc pode me ajudar? to procurando o $var
+
+&lt;img src=&quot;http://i120.photobucket.com/albums/o181/surfergirloco/dragon_shrek.jpg&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+
+
+
+(if: $var is &quot;Burro&quot;)[[[Continuar-&gt;vitoriaBurro]] ]
+(else:)[[[Continuar-&gt;fudeoCarai]] ]
+</tw-passagedata>
+<tw-passagedata pid="46" name="sapoInutil" tags="" position="2199,1937">Pepe saca sua arma e se mata na sua frente.
+
+&lt;img src=&quot;https://ih1.redbubble.net/image.182388423.4460/flat,800x800,075,f.u1.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+EITA PORRA!1!!11
+
+[[RUN LIKE HELL-&gt;caverna2]] </tw-passagedata>
+<tw-passagedata pid="47" name="caverna2" tags="" position="1608,1946">(if: $cavernaChar is &quot;messi&quot;)[(set: $cavernaChar2 to (either:&quot;pepe&quot;,&quot;dragao&quot;))]
+
+(else-if: $cavernaChar is &quot;pepe&quot;)[(set: $cavernaChar2 to (either:&quot;messi&quot;,&quot;dragao&quot;))]
+
+(else-if: $cavernaChar is &quot;dragao&quot;)[(set: $cavernaChar2 to (either:&quot;messi&quot;,&quot;pepe&quot;))]
+
+(if: $cavernaChar2 is &quot;messi&quot;)[Mais a frente na caverna você se depara com alguem se aproximando [[Continuar-&gt;messiUM]] ]
+
+(if: $cavernaChar2 is &quot;pepe&quot;)[Mais a frente na caverna você se depara com alguem se aproximando [[Continuar-&gt;pepeUM]] ]
+
+(if: $cavernaChar2 is &quot;dragao&quot;)[Mais a frente na floresta você se depara com alguem se aproximando [[Continuar-&gt;dragaoUM]] ]</tw-passagedata>
+<tw-passagedata pid="48" name="messi2" tags="" position="1766,1757">&lt;img src=&quot;http://www.maisfutebol.iol.pt/multimedia/oratvi/multimedia/imagem/id/13601617/600.jpg
+&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+AH PQP, não tem nada de util nesse lugar..
+
+(if: $cavernaChar is &quot;messi&quot;)[ [[Continuar pela caverna-&gt;caverna2]] ]
+(if: $cavernaChar2 is &quot;messi&quot;)[[[Continuar pela caverna-&gt;caverna3]] ]
+</tw-passagedata>
+<tw-passagedata pid="49" name="caverna3" tags="" position="1839,1497">(if: $cavernaChar is &quot;messi&quot;)[(set: $cavernaChar2 to (either:&quot;pepe&quot;,&quot;dragao&quot;))]
+
+(else-if: $cavernaChar is &quot;pepe&quot;)[(set: $cavernaChar2 to (either:&quot;messi&quot;,&quot;dragao&quot;))]
+
+(else-if: $cavernaChar is &quot;dragao&quot;)[(set: $cavernaChar2 to (either:&quot;messi&quot;,&quot;pepe&quot;))]
+
+(if: $cavernaChar2 is &quot;messi&quot;)[Mais a frente na caverna você se depara com alguem se aproximando [[Continuar-&gt;messiUM]] ]
+
+(if: $cavernaChar2 is &quot;pepe&quot;)[Mais a frente na caverna você se depara com alguem se aproximando [[Continuar-&gt;pepeUM]] ]
+
+(if: $cavernaChar2 is &quot;dragao&quot;)[Mais a frente na floresta você se depara com alguem se aproximando [[Continuar-&gt;dragaoUM]] ]</tw-passagedata>
+<tw-passagedata pid="50" name="vitoriaBurro" tags="" position="2422,1601">
+QUE CE TA FAZENDO AQUI MLK!! E COM ESSE DRAG... OOOH! QUEM PERDOA É JESUS.
+
+&lt;img src=&quot;http://1.bp.blogspot.com/-ofuO0niYILs/TknK48dzGRI/AAAAAAAAAr8/3OZsebHb5Kw/s1600/Drag%25C3%25A3o+e+Burro.jpg&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+[[Continuar-&gt;aeho]]</tw-passagedata>
+<tw-passagedata pid="51" name="fudeoCarai" tags="" position="2415,1793">&lt;img src=&quot;http://vignette3.wikia.nocookie.net/shrek/images/9/9b/Dragon_Shrek_Forever_3.png/revision/latest?cb=20120203213105&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+
+Ei, pq vc ta me olhando assim???
+eita carai... fodeu
+
+[[RUN LIKE HELL-&gt;perdeuCaverna]]</tw-passagedata>
+<tw-passagedata pid="52" name="aeho" tags="" position="2578,1602">Parabens vc achou o $var. E venceu o joguinho
+
+
+quer jogar de novo?
+
+[[Jogar Novamente-&gt;Inicio]] </tw-passagedata>
+<tw-passagedata pid="53" name="perdeuCaverna" tags="" position="2590,1791">&lt;img src=&quot;http://lightapp.cloudapp.net/images/answerimages/How_did_princess_Fiona_get_in_the_castle_with_the_dragon_1436741681.25.png&quot; width=&quot;700&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+
+O dragao pistolou e fez churrasquinho de você e você perdeu.
+
+[[Jogar novamente-&gt;Inicio]] </tw-passagedata>
 </tw-storydata>
 
 
